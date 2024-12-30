@@ -1,0 +1,105 @@
+-- Load OrionLib
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Create a new window
+local Window = OrionLib:MakeWindow({
+    Name = "Blox Fruit Features",
+    HidePremium = false,
+    IntroText = "Welcome",
+    SaveConfig = true,
+    ConfigFolder = "BloxFruitHub"
+})
+
+-- Function to load the Banana Hub script
+local function LoadBananaHub()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BananaaaHub/BANANA-HUB-S/refs/heads/main/BLOX FRUIT"))()
+end
+
+-- Main Features Tab
+local MainTab = Window:MakeTab({
+    Name = "Main Features",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+MainTab:AddTextbox({
+    Name = "Enter Dupe Number",
+    Default = "",
+    TextDisappear = false,
+    Callback = function(Value)
+        LoadBananaHub()
+    end
+})
+
+MainTab:AddButton({
+    Name = "Start Dupe",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+MainTab:AddButton({
+    Name = "All in Stock",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+MainTab:AddButton({
+    Name = "Freeze Trade Scam",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+MainTab:AddButton({
+    Name = "Auto Farm",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+-- Other Scripts Tab
+local OtherTab = Window:MakeTab({
+    Name = "Other Scripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+OtherTab:AddButton({
+    Name = "Hoho Hub",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+OtherTab:AddButton({
+    Name = "Banana Hub (Keyless)",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+OtherTab:AddButton({
+    Name = "Redz Hub",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+OtherTab:AddButton({
+    Name = "Speed Hub",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+OtherTab:AddButton({
+    Name = "W-Azure",
+    Callback = function()
+        LoadBananaHub()
+    end
+})
+
+-- Initialize OrionLib
+OrionLib:Init()
